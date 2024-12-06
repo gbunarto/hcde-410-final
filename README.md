@@ -1,3 +1,19 @@
-# hcde-410-final
+# Goal
+To examine world happiness scores in relation to GDP per capita.
 
-My HCDE 410 final project examines the factors that most differentiate countries with higher happiness scores from countries with low happiness scores. This analysis leverages data from the World Happiness Report from [Kaggle](https://www.kaggle.com/unsdsn/world-happiness) and [OCED Data Explorer](https://data-explorer.oecd.org/vis?lc=en&tm=DF_TABLE1_EXPENDITURE_HCPC&pg=0&snb=1&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_NAMAIN10%40DF_TABLE1_EXPENDITURE_HCPC&df[ag]=OECD.SDD.NAD&df[vs]=&pd=%2C&dq=A.AUS%2BAUT%2BBEL%2BCAN%2BCHL%2BCOL%2BCRI%2BCZE%2BDNK%2BEST%2BFIN%2BFRA%2BDEU%2BGRC%2BHUN%2BISL%2BIRL%2BISR%2BITA%2BJPN%2BKOR%2BLVA%2BLTU%2BLUX%2BMEX%2BNLD%2BNZL%2BNOR%2BPOL%2BPRT%2BSVK%2BSVN%2BESP%2BSWE%2BCHE%2BTUR%2BGBR%2BUSA...B1GQ_POP.......&to[TIME_PERIOD]=false&vw=tb), which examines the nominal GDP in different countries over time. The aim of this project from a scientific perspective is to understand what drives the perception of happiness of individuals in their countries and potential trends that emerge in their values and priorities.
+# License
+This project uses data that is governed by [Kaggle Terms and Conditions](https://www.kaggle.com/datasets/unsdsn/world-happiness/data) and [OECD Data Explorer Terms and Conditions](https://www.oecd.org/en/about/terms-conditions.html). Please review the terms to understand the usage rights and restrictions.
+
+# Data
+To reproduce the analysis done on this data, you can get the World Happiness Report on [Kaggle](https://www.kaggle.com/datasets/unsdsn/world-happiness/data) and nominal GDP values from [OECD Data Explorer](https://data-explorer.oecd.org/vis?lc=en&tm=DF_TABLE1_EXPENDITURE_HCPC&pg=0&snb=1&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_NAMAIN10@DF_TABLE1_EXPENDITURE_HCPC&df[ag]=OECD.SDD.NAD&df[vs]=&pd=,&dq=A.AUS+AUT+BEL+CAN+CHL+COL+CRI+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA...B1GQ_POP.......&to[TIME_PERIOD]=false&vw=tb). We then filtered the data to only include information from 2019. We then proceeded to merge the OECD Data Explorer and Kaggle Datasets. From here, we only kept four relevant columns in the DataFrame for the analysis as follows:
+
+‘Country or region’ - countries relevant in both OECD Data Explorer and the World Happiness Report in the year 2019. 
+
+‘Score’ - a country’s happiness score in the year 2019 from the World Happiness Report.
+
+‘OBS_Value’ - a country’s nominal GDP value in the year 2019 from OECD Data Explorer. 
+
+‘GDP per capita’ - a country’s individual score of GDP per capita in the year 2019 from the World Happiness Report.
+
+# Special Considerations or Issues For This Data 
+None.
